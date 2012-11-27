@@ -14,13 +14,25 @@ This project is set up to use [grunt](https://github.com/gruntjs/grunt) for a co
 
 ## Active Development
 
-If you simply run `grunt` it'll lint all of the JS files, which is generally a good thing. We're using [jshint](http://jshint.com) for linting, along with a series of options that can be seen in our gruntfile (`grunt.js`).
+Running `grunt` will lint all of the JS files. We're using [jshint](http://jshint.com) for linting, along with a series of options that can be seen in our gruntfile (`grunt.js`).
 
-Development of modules should take place in `src/app` which is built mostly off of [Dojo Boilerplate](https://github.com/csnover/dojo-boilerplate), and the process should typically flow like so:
+Development of modules take place in `src/app`, which is built (mostly)
+off of [Dojo Boilerplate](https://github.com/csnover/dojo-boilerplate).
+
+The workflow is like so: 
 
 * Start the server with `node server` in the root of the repo
 * Write awesome code
 * Reload http://localhost:4000 (or whatever the configured port is) to see awesome code in action
+
+## Dependencies
+
+MUDnode requires the following packages: 
+
+* [Node](https://github.com/joyent/node) (we recommend installing via [Homebrew](https://github.com/mxcl/homebrew) if using OSX)
+* [npm](https://github.com/isaacs/npm) (typically installed with Node)
+* [Grunt](https://github.com/gruntjs/grunt) (install via `npm install grunt -g`)
+* [JSHint](https://github.com/jshint/jshint) (install via `npm install jshint -g`)
 
 ## Building / Distribution
 
